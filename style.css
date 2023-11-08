@@ -13,7 +13,7 @@ body::-webkit-scrollbar{
 }
 .wrapper{
     background-color: rgb(1,1,0);
-    width: 500px;
+    width: 26%;
     height: 85%;
     margin: 10px auto;
     display: flex;
