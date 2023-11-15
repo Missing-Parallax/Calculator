@@ -19,3 +19,16 @@ for(item of button){
         }
     })
 }
+
+let calci= document.querySelector('html');
+calci.addEventListener('keydown',(event)=>{
+    console.log(event.key)
+    if(event.key=="Enter"){
+        try{
+            screen.value=eval(screen.value);
+        }
+        catch(err){
+            screen.value="Invalid";
+        }
+    }
+})

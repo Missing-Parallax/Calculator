@@ -10,12 +10,13 @@ body{
 }
 body::-webkit-scrollbar{
     visibility: hidden;
+    text-align: center;
 }
 .wrapper{
     background-color: rgb(1,1,0);
-    width: 26%;
-    height: 85%;
-    margin: 10px auto;
+    width: 25rem;
+    height: 50rem;
+    margin: auto;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -44,8 +45,8 @@ body::-webkit-scrollbar{
     gap: 10px;
 }
 button{
-    height: 105px;
-    width: 105px;
+    height: 6rem;
+    width: 6rem;
     border-radius: 50%;
     border: none;
     place-self: center;
@@ -57,7 +58,7 @@ button{
 }
 .zero{
     grid-column: span 2;
-    width: 220px;
+    /* width: 220px; */
     border-radius: 60px;
 }
 .orange{
@@ -66,4 +67,15 @@ button{
 .grey{
     background-color: rgb(164,165,164);
     color: rgb(48,48,48);
+}
+
+@media screen and (max-width: 650px) {
+    .wrapper{
+        width: 85vw;
+        height: 85vh;
+    }
+    button{
+        height: 5rem;
+        width: 5rem;
+    }
 }
